@@ -7,7 +7,6 @@ It dynamically handles memory and works efficiently with any valid file descript
 
 
 The function reads input in chunks of size BUFFER_SIZE and ensures proper handling of multiple file descriptors and edge cases, 
-
 such as empty files or reaching the end of a file.
 
 
