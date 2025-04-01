@@ -4,7 +4,7 @@ This repository contains my implementation of the **get_next_line** function, wh
 
 The function is memory-efficient and works with any valid file descriptor, like files or standard input.
 
-## **Key Concepts**
+### **Key Concepts**
 
 - **Dynamic Memory Management**: The function uses only `read`, `malloc`, and `free` to manage memory efficiently.
   
@@ -12,7 +12,7 @@ The function is memory-efficient and works with any valid file descriptor, like 
 
 - **Multiple File Descriptors**: Supports multiple file descriptors and keeps track of the state of each one separately.
 
-## **Bonus: Multiple File Descriptors**
+### **Bonus: Multiple File Descriptors**
 
 This implementation handles multiple files at once, maintaining the state of each file descriptor independently.
 ---
