@@ -1,21 +1,20 @@
 ## **get_next_line**
 
-This repository contains my implementation of the **get_next_line** function,
-which reads and returns a single line from a file descriptor, including the newline character (if present). 
+This repository contains my implementation of the **get_next_line** function, which reads and returns a single line from a file descriptor, including the newline character (if present).
 
-The function is designed to be memory-efficient and can handle any valid file descriptor, 
-such as files and standard input.
+The function is memory-efficient and works with any valid file descriptor, like files or standard input.
 
-### **Key Concepts**
+## **Key Concepts**
 
-- **Dynamic Memory Management**: The function dynamically allocates memory as needed and ensures proper management of memory throughout the process, using only the allowed functions: `read`, `malloc`, and `free`.
-- **Efficient Chunk Reading**: The function reads input in chunks of a specified size, determined by `BUFFER_SIZE`. It handles multiple file descriptors and edge cases such as reaching the end of a file or reading an empty file.
-- **Multiple File Descriptors**: The implementation efficiently manages multiple file descriptors, ensuring that the state for each file descriptor is maintained separately.
+- **Dynamic Memory Management**: The function uses only `read`, `malloc`, and `free` to manage memory efficiently.
+  
+- **Efficient Chunk Reading**: It reads data in chunks, defined by `BUFFER_SIZE`, and handles cases like the end of a file or an empty file.
 
-### **Bonus: Multiple File Descriptors**
+- **Multiple File Descriptors**: Supports multiple file descriptors and keeps track of the state of each one separately.
 
-This implementation supports multiple file descriptors. It manages the state for each file descriptor independently, allowing the function to handle multiple files at the same time.
+## **Bonus: Multiple File Descriptors**
 
+This implementation handles multiple files at once, maintaining the state of each file descriptor independently.
 ---
 
 ### **Functions Overview**
