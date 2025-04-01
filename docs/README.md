@@ -18,7 +18,7 @@ This implementation supports multiple file descriptors. It manages the state for
 
 ---
 
-### **Function Overview**
+### **Functions Overview**
 
 | **Function**                          | **Description** |
 |---------------------------------------|-----------------|
