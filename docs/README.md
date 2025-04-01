@@ -14,22 +14,17 @@ such as files and standard input.
 
 #### **Function Overview**
 
-| **Function** | **Description** |
-|--------------|-----------------|
-| `get_next_line(int fd)` | Reads and returns a single line from the file descriptor `fd`. |
+| **Function**                          | **Description** |
+|---------------------------------------|-----------------|
+| `get_next_line(int fd)`               | Reads and returns a single line from the file descriptor `fd`. |
 | `read_into_buffer(char *buffer, int fd)` | Reads data from the file descriptor into the buffer. |
-| `next_line(char buffer[])` | Extracts the next line from the buffer. |
-| `clear_buffer(char buffer[])` | Clears the buffer after reading a line. |
-
-#### **Helper Functions**
-
-| **Function** | **Description** |
-|--------------|-----------------|
-| `ft_strjoin(char *s1, char *s2)` | Concatenates two strings `s1` and `s2` into a new string. |
-| `ft_strjoin_free(char *s1, char *s2)` | Joins `s1` and `s2` and frees `s1`. |
+| `next_line(char buffer[])`            | Extracts the next line from the buffer. |
+| `clear_buffer(char buffer[])`         | Clears the buffer after reading a line. |
+| `ft_strjoin(char *s1, char *s2)`      | Concatenates two strings `s1` and `s2` into a new string. |
 | `ft_strchr(const char *ptr_string, int ptr_find)` | Finds the first occurrence of `ptr_find` in `ptr_string`. |
-| `ft_strlen(const char *str)` | Returns the length of `str`. |
+| `ft_strlen(const char *str)`          | Returns the length of `str`. |
 | `ft_strlcpy(char *dst, const char *src, int dstsize)` | Copies `src` into `dst` ensuring it doesn't exceed `dstsize`. |
+| `ft_strjoin_free(char *s1, char *s2)` | Joins `s1` and `s2` and frees `s1`. |
 
 #### **Bonus: Multiple File Descriptors**
 
