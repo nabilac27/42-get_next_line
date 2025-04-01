@@ -13,8 +13,8 @@ The function is memory-efficient and works with any valid file descriptor, like 
 - **Multiple File Descriptors**: Supports multiple file descriptors and keeps track of the state of each one separately.
 
 ### **Bonus: Multiple File Descriptors**
-
 This implementation handles multiple files at once, maintaining the state of each file descriptor independently.
+
 ---
 
 ### **Functions Overview**
