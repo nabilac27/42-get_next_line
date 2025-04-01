@@ -1,8 +1,8 @@
-## **get_next_line**
+# **get_next_line**
 
 This repository contains my implementation of the **get_next_line** function, which reads and returns a single line from a file descriptor, including the newline character (if present).
 
-### **Key Concepts**
+## **Key Concepts**
 
 - **Dynamic Memory Management**: The function uses only `read`, `malloc`, and `free` to manage memory efficiently.
   
@@ -10,12 +10,12 @@ This repository contains my implementation of the **get_next_line** function, wh
 
 - **Multiple File Descriptors**: Supports multiple file descriptors and keeps track of the state of each one separately.
 
-### **Bonus: Multiple File Descriptors**
+## **Bonus: Multiple File Descriptors**
 This implementation handles multiple files at once, maintaining the state of each file descriptor independently.
 
 ---
 
-### **Functions Overview**
+## **Functions Overview**
 
 | **Function**                          | **Description** |
 |---------------------------------------|-----------------|
