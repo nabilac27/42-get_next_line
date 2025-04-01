@@ -1,4 +1,4 @@
-### **get_next_line**
+## **get_next_line**
 
 This repository contains my implementation of the **get_next_line** function,
 which reads and returns a single line from a file descriptor, including the newline character (if present). 
