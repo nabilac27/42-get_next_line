@@ -26,10 +26,10 @@ such as files and standard input.
 | **Function** | **Description** |
 |--------------|-----------------|
 | `ft_strjoin(char *s1, char *s2)` | Concatenates two strings `s1` and `s2` into a new string. |
+| `ft_strjoin_free(char *s1, char *s2)` | Joins `s1` and `s2` and frees `s1`. |
 | `ft_strchr(const char *ptr_string, int ptr_find)` | Finds the first occurrence of `ptr_find` in `ptr_string`. |
 | `ft_strlen(const char *str)` | Returns the length of `str`. |
 | `ft_strlcpy(char *dst, const char *src, int dstsize)` | Copies `src` into `dst` ensuring it doesn't exceed `dstsize`. |
-| `ft_strjoin_free(char *s1, char *s2)` | Joins `s1` and `s2` and frees `s1`. |
 
 #### **Bonus: Multiple File Descriptors**
 
