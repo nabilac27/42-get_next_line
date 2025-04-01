@@ -12,7 +12,7 @@ such as files and standard input.
 - **Efficient Chunk Reading**: The function reads input in chunks of a specified size, determined by `BUFFER_SIZE`. It handles multiple file descriptors and edge cases such as reaching the end of a file or reading an empty file.
 - **Multiple File Descriptors**: The implementation efficiently manages multiple file descriptors, ensuring that the state for each file descriptor is maintained separately.
 
-#### **Functions**
+#### **Function Overview**
 
 | **Function** | **Description** |
 |--------------|-----------------|
