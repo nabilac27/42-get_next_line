@@ -36,7 +36,3 @@ The function is designed to be memory-efficient and can handle any valid file de
 The bonus aspect of this project is to handle **multiple file descriptors**. In the original version of `get_next_line`, the function works with a single file descriptor. However, for this implementation, the function has been extended to support multiple file descriptors simultaneously. 
 
 The state of each file descriptor (such as which part of the file has been read) is maintained independently, allowing the function to process each file descriptor in parallel and handle multiple files efficiently without conflict.
-
----
-
-This table and explanation clarify the purpose and structure of the functions used in the `get_next_line` implementation. The code is designed to be modular and efficient, focusing on proper memory management while providing the functionality required for reading lines from files or standard input.
