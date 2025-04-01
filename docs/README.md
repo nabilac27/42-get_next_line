@@ -2,8 +2,6 @@
 
 This repository contains my implementation of the **get_next_line** function, which reads and returns a single line from a file descriptor, including the newline character (if present).
 
-The function is memory-efficient and works with any valid file descriptor, like files or standard input.
-
 ### **Key Concepts**
 
 - **Dynamic Memory Management**: The function uses only `read`, `malloc`, and `free` to manage memory efficiently.
