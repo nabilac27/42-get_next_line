@@ -43,7 +43,7 @@ This implementation handles multiple files at once, maintaining the state of eac
 
 ---
 
-## How to Compile
+## How to Use
 
 Clone the repository:
 
@@ -57,10 +57,6 @@ Compile with:
 ```bash
 cc -Wall -Wextra -Werror get_next_line.c get_next_line_utils.c main.c
 ```
-
----
-
-## How to Use
 
 Include the header file in your program:
 
