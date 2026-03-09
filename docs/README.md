@@ -2,6 +2,18 @@
 
 This repository contains my implementation of the **get_next_line** function, which reads and returns a single line from a file descriptor, including the newline character (if present).
 
+## About get_next_line
+
+`get_next_line` reads text from a file descriptor and returns a single line each time the function is called.
+
+The function keeps reading from the file descriptor until it reaches a newline or the end of the file.
+
+It must also correctly handle:
+
+- Multiple file descriptors
+- Different buffer sizes
+- Memory management without leaks
+
 ## **Key Concepts**
 
 - **Dynamic Memory Management**: The function uses only `read`, `malloc`, and `free` to manage memory efficiently.
@@ -28,3 +40,86 @@ This implementation handles multiple files at once, maintaining the state of eac
 | `ft_strlen(const char *str)`          | Returns the length of `str`. |
 | `ft_strlcpy(char *dst, const char *src, int dstsize)` | Copies `src` into `dst` ensuring it doesn't exceed `dstsize`. |
 | `ft_strjoin_free(char *s1, char *s2)` | Joins `s1` and `s2` and frees `s1`. |
+
+---
+
+## How to Compile
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/get_next_line.git
+cd get_next_line
+```
+
+Compile with:
+
+```bash
+cc -Wall -Wextra -Werror get_next_line.c get_next_line_utils.c main.c
+```
+
+---
+
+## How to Use
+
+Include the header file in your program:
+
+```c
+#include "get_next_line.h"
+```
+
+---
+
+## Example
+
+Example program:
+
+```c
+#include <fcntl.h>
+#include <stdio.h>
+#include "get_next_line.h"
+
+int main(void)
+{
+    int fd;
+    char *line;
+
+    fd = open("example.txt", O_RDONLY);
+
+    while ((line = get_next_line(fd)) != NULL)
+    {
+        printf("%s", line);
+        free(line);
+    }
+
+    close(fd);
+    return (0);
+}
+```
+
+Compile and run:
+
+```bash
+cc -Wall -Wextra -Werror get_next_line.c get_next_line_utils.c main.c
+./a.out
+```
+
+---
+
+## Example File
+
+`example.txt`
+
+```
+Hello
+This is get_next_line
+Reading one line at a time
+```
+
+### Output
+
+```
+Hello
+This is get_next_line
+Reading one line at a time
+```
